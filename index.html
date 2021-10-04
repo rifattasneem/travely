@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/wow/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Travely</title>
+  </head>
+  <body>
+    <!-- top starts -->
+    <section class="top">
+
+      <!-- header starts -->
+      <header class="d-md-block d-none">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+              <a class="navbar-brand logo" href="index.html">Travely</a>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-md">
+            <div class="container px-65">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-start">
+                  <li class="nav-item">
+                    <select class="form-select drop-select">
+                      <option value="0">USD</option>
+                      <option value="1">EUR</option>
+                      <option value="2">GBP</option>
+                      <option value="3">AUD</option>
+                    </select>
+                  </li>
+                  <li class="nav-item">
+                    <select class="form-select drop-select">
+                      <option value="0">English</option>
+                      <option value="1">German</option>
+                      <option value="2">Dutch</option>
+                    </select>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav m-auto custom-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#trending">TRENDING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#all-products">ALL PRODUCTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">SUBSCRIBE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#connect">CONNECT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#support">SUPPORT</a>
+                  </li>
+                </ul>
+
+                <div class="d-flex justify-content-lg-end justify-content-center menu-cart">
+                  <!-- user profile -->
+                  <a data-bs-toggle="offcanvas" href="#offcanvasScrolling1" role="button" data-bs-target="#offcanvasScrolling1" aria-controls="offcanvasScrolling1">
+                   <i class="bi bi-person"></i>
+                  </a>
+                  <!-- user profile -->
+
+                  <!-- <a href="#"><i class="bi bi-search"></i></a> -->
+
+                  <!-- cart -->
+                  <a data-bs-toggle="offcanvas" href="#offcanvasScrolling2" role="button" data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling2">
+                   <i class="bi bi-cart2"></i>
+                  </a>
+                  <!-- cart -->
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- offcanvas -->
+      <!-- sign in -->
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling1" aria-labelledby="offcanvasScrolling1Label" style="border-left: none;">
+
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title off-title" id="offcanvasScrolling1Label">SIGN IN</h4>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <form action="#">
+            <div class="row">
+              <div class="col-12 mb-3"><input type="email" class="form-control off-form rounded-pill" placeholder="User email" required></div>
+              <div class="col-12 mb-3"><input type="password" class="form-control off-form rounded-pill" placeholder="Password" required></div>
+              <div class="col-12 mb-3 d-grid"><button type="submit" class="btn btn-offcanv rounded-pill">submit</button></div>
+              
+              <div class="col-6">
+                <div class="form-check off-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault" style="width: 100%; padding-top: 2px;">
+                    Remember Me
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 text-end">
+                <div class="forgotpass">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+               
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-12 my-3 text-center">
+              <div class="register">
+                <i class="bi bi-person-circle"></i>
+                <p>No account yet?</p>
+                <a href="#">CREATE AN ACCOUNT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sign in -->
+
+      <!-- shopping cart -->
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling2" aria-labelledby="offcanvasScrolling2Label" style="border-left: none;">
+
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title off-title" id="offcanvasScrolling2Label">SHOPPING CART</h4>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-12 my-3 text-center">
+              <div class="shopping-cart">
+                <i class="bi bi-basket3"></i>
+                <p>No products in the cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- shopping cart -->
+      <!-- offcanvas -->
+
+      <!-- sm screen and lower -->
+      <header class="d-md-none">
+        <div class="container">
+
+          <nav class="navbar navbar-expand-md">
+            <div class="container px-65">
+              <a class="navbar-brand logo" href="index.html">Travely</a>
+              
+              <button class="navbar-toggler nav-tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-chevron-double-down"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-start">
+                  <li class="nav-item">
+                    <select class="form-select drop-select">
+                      <option value="0">USD</option>
+                      <option value="1">EUR</option>
+                      <option value="2">GBP</option>
+                      <option value="3">AUD</option>
+                    </select>
+                  </li>
+                  <li class="nav-item">
+                    <select class="form-select drop-select">
+                      <option value="0">English</option>
+                      <option value="1">German</option>
+                      <option value="2">Dutch</option>
+                    </select>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav m-auto custom-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#trending2">TRENDING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#all-products">ALL PRODUCTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">SUBSCRIBE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#connect">CONNECT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#support">SUPPORT</a>
+                  </li>
+                </ul>
+
+                <div class="d-flex justify-content-lg-end justify-content-center menu-cart">
+                  <!-- user profile -->
+                  <a data-bs-toggle="offcanvas" href="#offcanvasScrolling1" role="button" data-bs-target="#offcanvasScrolling1" aria-controls="offcanvasScrolling1">
+                   <i class="bi bi-person"></i>
+                  </a>
+                  <!-- user profile -->
+
+                  <!-- <a href="#"><i class="bi bi-search"></i></a> -->
+
+                  <!-- cart -->
+                  <a data-bs-toggle="offcanvas" href="#offcanvasScrolling2" role="button" data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling2">
+                   <i class="bi bi-cart2"></i>
+                  </a>
+                  <!-- cart -->
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- sm screen and lower -->
+      <!-- header ends -->
+
+      <!-- offcanvas -->
+      <!-- sign in -->
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling3" aria-labelledby="offcanvasScrolling3Label" style="border-left: none;">
+
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title off-title" id="offcanvasScrolling3Label">SIGN IN</h4>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <form action="#">
+            <div class="row">
+              <div class="col-12 mb-3"><input type="email" class="form-control off-form rounded-pill" placeholder="User email" required></div>
+              <div class="col-12 mb-3"><input type="password" class="form-control off-form rounded-pill" placeholder="Password" required></div>
+              <div class="col-12 mb-3 d-grid"><button type="submit" class="btn btn-offcanv rounded-pill">submit</button></div>
+              
+              <div class="col-6">
+                <div class="form-check off-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                  <label class="form-check-label" for="flexCheckDefault2" style="width: 100%; padding-top: 2px;">
+                    Remember Me
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 text-end">
+                <div class="forgotpass">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+               
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-12 my-3 text-center">
+              <div class="register">
+                <i class="bi bi-person-circle"></i>
+                <p>No account yet?</p>
+                <a href="#">CREATE AN ACCOUNT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sign in -->
+
+      <!-- shopping cart -->
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling4" aria-labelledby="offcanvasScrolling4Label" style="border-left: none;">
+
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title off-title" id="offcanvasScrolling4Label">SHOPPING CART</h4>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-12 my-3 text-center">
+              <div class="shopping-cart">
+                <i class="bi bi-basket3"></i>
+                <p>No products in the cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- shopping cart -->
+      <!-- offcanvas -->
+
+      <!-- banner starts -->
+      <div class="banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 text-center">
+              <p class="wow fadeInUp b-p" data-wow-duration="2s" data-wow-delay=".1s">find everything you need</p>
+              <h1 class="wow fadeInUp b-h1" data-wow-duration="2s" data-wow-delay=".5s">for a trip</h1>
+              <a href="#all-products" class="btn btn-banner rounded-pill wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">view all products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner ends -->
+
+      <!-- latest products starts -->
+      <div class="l-products d-none d-md-block" id="trending">
+        <div class="container px-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              
+              <div class="row align-items-center">
+
+                <!-- dakine suitcase -->
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6 pe-xxl-4">
+                      <img src="images/latest-products/dakine-suitcase.png" class="img-fluid" alt="dakine-suitcase">
+                    </div>
+                    <div class="col-md-6">
+                      <span class="badge bg-dark rounded-0 l-p-badge">-20%</span>
+                      <h2 class="l-p-h2">dakine suitcase</h2>
+
+                      <!-- color -->
+                      <div class="color">
+                        <input type="radio" name="color" id="magenta">
+                        <label for="magenta"><span class="magenta"></span></label>
+
+                        <input type="radio" name="color" id="orange">
+                        <label for="orange"><span class="orange"></span></label>
+
+                        <input type="radio" name="color" id="teal">
+                        <label for="teal"><span class="teal"></span></label>
+
+                        <input type="radio" name="color" id="grey">
+                        <label for="grey"><span class="grey"></span></label>
+                      </div>
+                      <!-- color -->
+
+                      <h5 class="l-p-h5">description</h5>
+                      <p class="l-p-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. <a href="#">Learn more</a></p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- dakine suitcase -->
+
+                <div class="col-md-6" style="border-left: 2px solid #6f6f6f33;">
+                  
+                  <!-- luggage pack -->
+                  <div class="row" style="border-bottom: 2px solid #6f6f6f33 !important; padding: 0 0 40px 0;">
+                    <div class="offset-1 col-md-5">
+                      <img src="images/latest-products/luggage-pack.png" class="img-fluid" alt="luggage-pack">
+                    </div>
+                    <div class="col-md-6 mt-auto">
+                      <h2 class="l-p-h2 l-p-h2-2">luggage pack</h2>
+
+                      <!-- color -->
+                      <div class="color-2">
+                        <input type="radio" name="color" id="magenta2">
+                        <label for="magenta2"><span class="magenta2"></span></label>
+
+                        <input type="radio" name="color" id="orange2">
+                        <label for="orange2"><span class="orange2"></span></label>
+
+                        <input type="radio" name="color" id="teal2">
+                        <label for="teal2"><span class="teal2"></span></label>
+
+                        <input type="radio" name="color" id="grey2">
+                        <label for="grey2"><span class="grey2"></span></label>
+                      </div>
+                      <!-- color -->
+
+                      <h5 class="l-p-h5 l-p-h5-2 text-end">description</h5>
+                      <p class="l-p-p l-p-p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... <a href="#">Learn more</a></p>
+                      
+                    </div>
+                  </div>
+                  <!-- luggage pack -->
+
+                  <!-- geniun pack high alt -->
+                  <div class="row" style="padding: 40px 0 30px;">
+                    
+                    <div class="offset-1 col-md-6">
+                      <h2 class="l-p-h2 l-p-h2-3">Genius Pack High Altitude</h2>
+
+                      <!-- color -->
+                      <div class="color-2">
+                        <input type="radio" name="color" id="magenta3">
+                        <label for="magenta3"><span class="magenta3"></span></label>
+
+                        <input type="radio" name="color" id="orange3">
+                        <label for="orange3"><span class="orange3"></span></label>
+
+                        <input type="radio" name="color" id="teal3">
+                        <label for="teal3"><span class="teal3"></span></label>
+
+                        <input type="radio" name="color" id="white">
+                        <label for="white"><span class="white"></span></label>
+                      </div>
+                      <!-- color -->
+
+                      <h5 class="l-p-h5 l-p-h5-2 text-end">description</h5>
+                      <p class="l-p-p l-p-p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... <a href="#">Learn more</a></p>
+                    </div>
+                    <div class="col-md-5">
+                      <img src="images/latest-products/high-alt-pack.png" class="img-fluid" alt="luggage-pack">
+                    </div>
+
+                  </div>
+                  <!-- geniun pack high alt -->
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm screen and lower -->
+      <div class="l-products d-md-none" id="trending2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+
+              <!-- dakine suitcase -->
+              <div class="row align-items-center" style="border-bottom: 2px solid #6f6f6f33 !important; padding: 20px 0;">
+                <div class="col-6 col-sm-5">
+                  <img src="images/latest-products/dakine-suitcase.png" class="img-fluid" alt="dakine-suitcase">
+                </div>
+                <div class="offset-sm-1 col-6">
+                  <span class="badge bg-dark rounded-0 l-p-badge">-20%</span>
+                  <h2 class="l-p-h2">dakine suitcase</h2>
+
+                  <!-- color -->
+                  <div class="color">
+                    <input type="radio" name="color" id="magenta">
+                    <label for="magenta"><span class="magenta"></span></label>
+
+                    <input type="radio" name="color" id="orange">
+                    <label for="orange"><span class="orange"></span></label>
+
+                    <input type="radio" name="color" id="teal">
+                    <label for="teal"><span class="teal"></span></label>
+
+                    <input type="radio" name="color" id="grey">
+                    <label for="grey"><span class="grey"></span></label>
+                  </div>
+                  <!-- color -->
+
+                  <h5 class="l-p-h5">description</h5>
+                  <p class="l-p-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. <a href="#">Learn more</a></p>
+                  
+                </div>
+              </div>
+              <!-- dakine suitcase -->
+              
+              <!-- luggage pack -->
+              <div class="row align-items-center" style="border-bottom: 2px solid #6f6f6f33 !important; padding: 20px 0;">
+                <div class="col-5">
+                  <img src="images/latest-products/luggage-pack.png" class="img-fluid" alt="luggage-pack">
+                </div>
+                <div class="offset-1 col-6">
+                  <h2 class="l-p-h2 l-p-h2-2">luggage pack</h2>
+
+                  <!-- color -->
+                  <div class="color">
+                    <input type="radio" name="color" id="magenta2">
+                    <label for="magenta2"><span class="magenta2"></span></label>
+
+                    <input type="radio" name="color" id="orange2">
+                    <label for="orange2"><span class="orange2"></span></label>
+
+                    <input type="radio" name="color" id="teal2">
+                    <label for="teal2"><span class="teal2"></span></label>
+
+                    <input type="radio" name="color" id="grey2">
+                    <label for="grey2"><span class="grey2"></span></label>
+                  </div>
+                  <!-- color -->
+
+                  <h5 class="l-p-h5">description</h5>
+                  <p class="l-p-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... <a href="#">Learn more</a></p>
+                  
+                </div>
+              </div>
+              <!-- luggage pack -->
+
+              <!-- geniun pack high alt -->
+              <div class="row align-items-center" style="padding: 20px 0;">
+                <div class="col-5">
+                  <img src="images/latest-products/high-alt-pack.png" class="img-fluid" alt="luggage-pack">
+                </div>
+                
+                <div class="offset-1 col-6">
+                  <h2 class="l-p-h2 l-p-h2-2">Genius Pack High Altitude</h2>
+
+                  <!-- color -->
+                  <div class="color">
+                    <input type="radio" name="color" id="magenta3">
+                    <label for="magenta3"><span class="magenta3"></span></label>
+
+                    <input type="radio" name="color" id="orange3">
+                    <label for="orange3"><span class="orange3"></span></label>
+
+                    <input type="radio" name="color" id="teal3">
+                    <label for="teal3"><span class="teal3"></span></label>
+
+                    <input type="radio" name="color" id="white">
+                    <label for="white"><span class="white"></span></label>
+                  </div>
+                  <!-- color -->
+
+                  <h5 class="l-p-h5">description</h5>
+                  <p class="l-p-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt... <a href="#">Learn more</a></p>
+                </div>
+              </div>
+              <!-- geniun pack high alt -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sm screen and lower -->
+
+    <!-- latest products ends -->
+    </section>
+    <!-- top ends -->
+
+    <!-- bottom starts -->
+    <section class="bottom">
+      
+      <!-- email starts -->
+      <div class="email" id="subscribe">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-7 col-xl-4 text-center">
+              <h1 class="wow fadeInUp e-h1" data-wow-duration="2s" data-wow-delay=".1s">win a trip</h1>
+              <h2 class="wow fadeInUp e-h2" data-wow-duration="2s" data-wow-delay=".4s">with travely</h2>
+              <p class="wow fadeInUp e-p" data-wow-duration="2s" data-wow-delay=".8s">Enter your email to join.</p>
+
+              <div class="wow fadeInUp row justify-content-center" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="col-md-9">
+
+                  <form action="#" class="rounded-pill e-form">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                    <button class="btn btn-banner btn-email rounded-pill" type="submit">join</button>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- email ends -->
+
+      <!-- popular -->
+      <div class="popular" id="all-products">
+        <div class="container px-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+
+              <h1 class="p-h1 text-center">popular</h2>
+
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="filter-links text-center mb-5">
+
+                    <a class="p-a" data-filter="*">show all</a>
+
+                    <a class="p-a" data-filter=".new-arrivals">new arrivals</a>
+
+                    <a class="p-a" data-filter=".best-sellers">best sellers</a>
+
+                    <a class="p-a" data-filter=".discounts">discounts</a>
+
+                  </div>
+                </div>
+              </div>
+   
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="grid">
+
+                    <!-- single item -->
+                    <div class="grid-item best-sellers">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/men-retro-canvas-bag.png" class="img-fluid popular-img" alt="men-retro-canvas-bag">
+                        </div>
+                      </div>
+                      
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Men's Retro Canvas..</p>
+                            <h6 class="p-h6">$39.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item big -->
+                    <div class="grid-item grid-item--width2 grid-item--height2 discounts">
+                      <div class="d-flex justify-content-end p-1 p-xl-3">
+                        <span class="badge bg-dark rounded-0 l-p-badge">-20%</span>
+                      </div>
+                      
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/dakine-suitcase.png" class="img-fluid popular-img popular-img2" alt="dakine-suitcase">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Dakine Suitcase</p>
+                            <h6 class="p-h6">$119.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item big -->
+
+                    <!-- single item -->
+                    <div class="grid-item">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/latest-products/luggage-pack.png" class="img-fluid popular-img" alt="luggage-pack">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">2 Piece Luggage Set</p>
+                            <h6 class="p-h6">$79.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item -->
+                    <div class="grid-item new-arrivals">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/amsterdam-business.png" class="img-fluid popular-img" alt="amsterdam-business">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Amsterdam Busine..</p>
+                            <h6 class="p-h6">$49.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item -->
+                    <div class="grid-item best-sellers">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/travel-carrier.png" class="img-fluid popular-img" alt="travel-carrier">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Travel Tote Carrier Bag</p>
+                            <h6 class="p-h6">$59.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item -->
+                    <div class="grid-item best-sellers">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/latest-products/luggage-pack.png" class="img-fluid popular-img" alt="luggage-pack">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">2 Piece Luggage Set</p>
+                            <h6 class="p-h6">$79.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item -->
+                    <div class="grid-item new-arrivals">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/travel-carrier-magenta.png" class="img-fluid popular-img" alt="travel-carrier-magenta">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Travel Tote Carrier Bag</p>
+                            <h6 class="p-h6">$59.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item big -->
+                    <div class="grid-item grid-item--width2 grid-item--height2 discounts best-sellers">
+                      <div class="d-flex justify-content-end p-1 p-xl-3">
+                        <span class="badge bg-dark rounded-0 l-p-badge">-20%</span>
+                      </div>
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/hiking-backpack.png" class="img-fluid popular-img popular-img2" alt="travel-carrier-big">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Hiking Backpack</p>
+                            <h6 class="p-h6">$109.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item big -->
+
+                    <!-- single item -->
+                    <div class="grid-item new-arrivals">
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/latest-products/high-alt-pack.png" class="img-fluid popular-img" alt="high-alt-pack">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">High Altitude Pack</p>
+                            <h6 class="p-h6">$39.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                    <!-- single item -->
+                    <div class="grid-item new-arrivals"> 
+                      <div class="row justify-content-center align-items-center">
+                        <div class="col-10 text-center">
+                          <img src="images/all-products/amsterdam-business.png" class="img-fluid popular-img" alt="amsterdam-business">
+                        </div>
+                      </div>
+                    
+                      <div class="row justify-content-between">
+                        <div class="col-9 col-sm-10 col-lg-9">
+                          <div class="p-text">
+                            <p class="p-p">Amsterdam Busine..</p>
+                            <h6 class="p-h6">$49.99</h6>
+                            <!-- color -->
+                            <div class="color-2 pop">
+                              <input type="radio" name="color" id="magenta3">
+                              <label for="magenta3"><span class="magenta3"></span></label>
+
+                              <input type="radio" name="color" id="orange3">
+                              <label for="orange3"><span class="orange3"></span></label>
+
+                              <input type="radio" name="color" id="teal3">
+                              <label for="teal3"><span class="teal3"></span></label>
+                            </div>
+                            <!-- color -->
+                          </div>
+                        </div>
+                        <div class="col-3 col-sm-2 col-lg-3 d-flex justify-content-end align-items-end">
+                          <a href="#" class="btn btn-pop rounded-pill">
+                            <i class="bi bi-cart2"></i>
+                          </a>
+                        </div> 
+                      </div>
+                    </div>
+                    <!-- single item -->
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center mt-5 pt-lg-3">
+                <div class="col-md-6 col-lg-4 text-center">
+                  <a href="#products" class="btn btn-banner rounded-pill">view all products</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popular -->
+
+      <!-- footer links -->
+      <div class="footer-links" id="connect">
+        <div class="container px-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-11  d-none d-md-block">
+
+              <div class="row">
+
+                <div class="col">
+                  <div class="f-links">
+                   <h2>Information</h2>
+                    <p><a href="#">Specials</a></p>
+                    <p><a href="#">New products</a></p>
+                    <p><a href="#">Top sellers</a></p>
+                    <p><a href="#">Our stores</a></p>
+                    <p><a href="#">Contact us</a></p>
+                    <p><a href="#">Terms and condition of use</a></p>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Page configuration</a></p>
+                    <p><a href="#">Sitemap</a></p>
+                    <p><a href="#">Blog</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="f-links">
+                    <h2>Follow us</h2>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">RSS</a></p>
+                    <p><a href="#">Google plus</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="f-links">
+                    <h2>My account</h2>
+                    <p><a href="#">My orders</a></p>
+                    <p><a href="#">My Merchendise returs</a></p>
+                    <p><a href="#">My Credit slips</a></p>
+                    <p><a href="#">My addresses</a></p>
+                    <p><a href="#">Personal info</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="f-links">
+                    <h2>Store information</h2>
+                    <p>My Company , 1 234, New york</p>
+                    <p>Call us now: 0123-456-789</p>
+                    <p>Email: your@example.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 d-md-none">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Information
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body acc-body">
+                      <p><a href="#">Specials</a></p>
+                      <p><a href="#">New products</a></p>
+                      <p><a href="#">Top sellers</a></p>
+                      <p><a href="#">Our stores</a></p>
+                      <p><a href="#">Contact us</a></p>
+                      <p><a href="#">Terms and condition of use</a></p>
+                      <p><a href="#">About us</a></p>
+                      <p><a href="#">Page configuration</a></p>
+                      <p><a href="#">Sitemap</a></p>
+                      <p><a href="#">Blog</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Follow us
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body acc-body">
+                      <p><a href="#">Facebook</a></p>
+                      <p><a href="#">Twitter</a></p>
+                      <p><a href="#">RSS</a></p>
+                      <p><a href="#">Google plus</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      My account
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body acc-body">
+                      <p><a href="#">My orders</a></p>
+                      <p><a href="#">My Merchendise returs</a></p>
+                      <p><a href="#">My Credit slips</a></p>
+                      <p><a href="#">My addresses</a></p>
+                      <p><a href="#">Personal info</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Store information
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body acc-body">
+                      <p>My Company , 1 234, New york</p>
+                      <p>Call us now: 0123-456-789</p>
+                      <p>Email: your@example.com</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- footer links -->
+
+      <!-- footer starts -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>All rights reserved. Travely @ 2019</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer ends -->
+
+    </section>
+    <!-- bottom ends -->
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="assets/isotope-docs/isotope.pkgd.min.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
